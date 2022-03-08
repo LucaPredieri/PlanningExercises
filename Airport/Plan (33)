@@ -1,0 +1,6 @@
+(getonthecar agent car house airplane)
+(ridingcar car house airport1 agent)
+(getoffthecar agent car airport1)
+(getontheairplane airplane agent airport1 car)
+(flyingairplane agent airplane airport1 airport2)
+(getofftheairplane agent airplane airport2)

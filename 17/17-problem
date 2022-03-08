@@ -1,0 +1,30 @@
+(define (problem airport-problem)
+
+    (:domain airport)
+    
+    (:objects 
+        a
+        l1 l2 l3 l4
+    )
+    
+    (:init
+        (AGENT a)
+        
+        (LOCATION l1) (LOCATION l2) 
+        (LOCATION l3) (LOCATION l4)
+        
+        (at a l1)
+        
+        (notvisited l1)(notvisited l2)
+        (notvisited l3)(notvisited l4)
+        
+        (bridge-conn l1 l2) (bridge-conn l2 l3) (bridge-conn l4 l1)
+        (road-conn l1 l2) (road-conn l2 l3) (road-conn l3 l4)
+    )
+    
+    (:goal (and
+        (at a l1)
+        (visited l1) (visited l2) (visited l3) (visited l4)
+        (bridged a))
+    )
+)

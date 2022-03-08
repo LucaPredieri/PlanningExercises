@@ -1,0 +1,4 @@
+(move-road a l1 l2)
+(move-bridge a l2 l3)
+(move-road a l3 l4)
+(move-bridge a l4 l1)
